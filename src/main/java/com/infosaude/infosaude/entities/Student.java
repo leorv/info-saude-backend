@@ -10,6 +10,6 @@ public class Student {
     private String name;
     private String birthDate;
     private String grade;
-    private char gender;
-    private int cpf;
+    private String gender;
+    private double cpf;
 }
