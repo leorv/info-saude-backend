@@ -6,6 +6,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Vaccine {
-    private int id;
+    private String id;
     private String name;
 }

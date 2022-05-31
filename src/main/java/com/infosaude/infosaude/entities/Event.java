@@ -6,7 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Event {
-    private int id;
+    private String id;
     private String studentId;
     private String type;
     private String description;

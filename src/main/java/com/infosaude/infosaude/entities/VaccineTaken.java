@@ -6,9 +6,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class VaccineTaken {
-    private int id;
-    private int vaccineId;
-    private int studentId;
+    private String id;
+    private String vaccineId;
+    private String studentId;
     private String name;
     private String description;
     private String date;    
