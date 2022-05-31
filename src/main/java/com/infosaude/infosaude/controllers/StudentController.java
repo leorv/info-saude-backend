@@ -45,7 +45,6 @@ public class StudentController {
     @GetMapping("/getByName/{name}")
     public List<Student> getStudentByName(@PathVariable(value = "name") String name)
             throws InterruptedException, ExecutionException {
-        System.out.println(name);
         return studentService.getStudentByName(name);
     }
 

@@ -53,7 +53,6 @@ public class StudentService {
         Student student;
         if (document.exists()) {
             student = document.toObject(Student.class);
-            student.setId(id);
             return student;
         }
         return null;

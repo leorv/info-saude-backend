@@ -39,7 +39,6 @@ public class EventController {
 
     @GetMapping("/{id}")
     public Event getEventById(@PathVariable(value = "id") String id) throws InterruptedException, ExecutionException {
-        System.out.println(id);
         return eventService.getEventById(id);
     }
 

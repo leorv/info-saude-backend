@@ -44,7 +44,6 @@ public class EventService {
         Event event;
         if (document.exists()) {
             event = document.toObject(Event.class);
-            event.setId(id);
             return event;
         }
         return null;
