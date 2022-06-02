@@ -81,12 +81,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <excludes>
+                    <!-- TODO: criar os métodos manualmente em cada entidade -->
+                    <!-- <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
                         </exclude>
-                    </excludes>
+                    </excludes> -->
                 </configuration>
             </plugin>
             <plugin>
