@@ -41,11 +41,11 @@ public class VaccineTakenController {
         return vaccinetakenService.getVaccineTakenById(id);
     }
 
-    @GetMapping("/getVaccineTakensByType/{type}")
-    public List<VaccineTaken> getVaccineTakenByType(@PathVariable(value = "type") String type)
-            throws InterruptedException, ExecutionException {
-        return vaccinetakenService.getVaccineTakensByType(type);
-    }
+    // @GetMapping("/getVaccineTakensByType/{type}")
+    // public List<VaccineTaken> getVaccineTakenByType(@PathVariable(value = "type") String type)
+    //         throws InterruptedException, ExecutionException {
+    //     return vaccinetakenService.getVaccineTakensByType(type);
+    // }
 
     @GetMapping("/getByStudentId/{studentId}")
     // public VaccineTaken[] getVaccineTakenByStudentId(@RequestParam int studentId) throws

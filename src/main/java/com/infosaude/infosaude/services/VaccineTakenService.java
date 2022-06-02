@@ -49,22 +49,22 @@ public class VaccineTakenService {
         return null;
     }
 
-    public List<VaccineTaken> getVaccineTakensByType(String type) throws InterruptedException, ExecutionException {
-        Firestore dbFirestore = FirestoreClient.getFirestore();
-        Query docs = dbFirestore.collection("vaccines-taken").whereEqualTo("type", type);
-        // select("type", type);
-        ApiFuture<QuerySnapshot> future = docs.get();
-        QuerySnapshot document = future.get();
+    // public List<VaccineTaken> getVaccineTakensByType(String type) throws InterruptedException, ExecutionException {
+    //     Firestore dbFirestore = FirestoreClient.getFirestore();
+    //     Query docs = dbFirestore.collection("vaccines-taken").whereEqualTo("type", type);
+    //     // select("type", type);
+    //     ApiFuture<QuerySnapshot> future = docs.get();
+    //     QuerySnapshot document = future.get();
 
-        if (!document.isEmpty()) {
-            List<VaccineTaken> vaccinetakens;
-            vaccinetakens = document.toObjects(VaccineTaken.class);
-            // toObject(VaccineTaken[].class);
+    //     if (!document.isEmpty()) {
+    //         List<VaccineTaken> vaccinetakens;
+    //         vaccinetakens = document.toObjects(VaccineTaken.class);
+    //         // toObject(VaccineTaken[].class);
 
-            return vaccinetakens;
-        }
-        return null;
-    }
+    //         return vaccinetakens;
+    //     }
+    //     return null;
+    // }
 
     public List<VaccineTaken> getVaccineTakensByStudentId(String studentId) throws InterruptedException, ExecutionException {
         Firestore dbFirestore = FirestoreClient.getFirestore();
