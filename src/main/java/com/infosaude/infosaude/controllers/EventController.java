@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/events")
+@RequestMapping(value = "events")
 public class EventController {
 
     public EventService eventService;
@@ -32,7 +32,7 @@ public class EventController {
         return eventService.createEvent(event);
     }
 
-    @GetMapping("/")
+    @GetMapping
     public List<Event> getAllEvents() throws InterruptedException, ExecutionException {
         return eventService.getAllEvents();
     }

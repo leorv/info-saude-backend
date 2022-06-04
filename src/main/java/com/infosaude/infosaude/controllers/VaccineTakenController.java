@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/vaccines-taken")
+@RequestMapping(value = "vaccines-taken")
 public class VaccineTakenController {
     
     public VaccineTakenService vaccinetakenService;
@@ -31,7 +31,7 @@ public class VaccineTakenController {
         return vaccinetakenService.createVaccineTaken(vaccinetaken);
     }
 
-    @GetMapping("/")
+    @GetMapping
     public List<VaccineTaken> getAllVaccineTakens() throws InterruptedException, ExecutionException {
         return vaccinetakenService.getAllVaccineTakens();
     }

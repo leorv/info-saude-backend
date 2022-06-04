@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/students")
+@RequestMapping(value = "students")
 public class StudentController {
     
     public StudentService studentService;
@@ -31,7 +31,7 @@ public class StudentController {
         return studentService.createStudent(student);
     }
 
-    @GetMapping("/")
+    @GetMapping
     public List<Student> getAllStudents() throws InterruptedException, ExecutionException {
         return studentService.getAllStudents();
     }
